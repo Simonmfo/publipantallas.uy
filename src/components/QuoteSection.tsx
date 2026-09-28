@@ -165,11 +165,10 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
                 className="p-3 rounded-xl bg-[#222a3d] text-[#dae2fd] border border-[#222a3d] focus:border-[#0ea5e9] focus:outline-none transition-all"
               >
                 <option value="todas">Quiero asesoría y recomendaciones según mi presupuesto</option>
-                <option value="Plan Pantallas LED ($150 USD)">Plan Pantallas LED - Vía Pública en Paysandú ($150 USD)</option>
-                <option value="Plan Puntos WiFi Cautivo ($190 USD)">Plan Puntos WiFi Cautivo - 100% Atención en Celular ($190 USD)</option>
-                <option value="Combo Pantallas LED + WiFi ($290 USD)">Combo Pantallas LED + WiFi - Cobertura Total ($290 USD)</option>
-                <option value="Publicidad en Puntos WiFi (Portal Cautivo)">Solo Publicidad en Puntos WiFi (Portal Cautivo)</option>
-                <option value="Pantallas LED Publicitarias">Solo Pantallas LED Publicitarias</option>
+                <option value="Plan Starter Local ($150 USD)">Plan Starter Local - Comercios &amp; Profesionales ($150 USD / mes)</option>
+                <option value="Plan Comercial Activo ($290 USD)">Plan Comercial Activo - Alta Frecuencia ($290 USD / mes)</option>
+                <option value="Plan Gran Impacto">Plan Gran Impacto / Dominancia de Marca (A Medida)</option>
+                <option value="Campaña Comercial en Pantallas LED">Campaña en Pantallas LED de Paysandú</option>
               </select>
             </div>
 

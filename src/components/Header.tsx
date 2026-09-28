@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0ea5e9]"></span>
             </span>
             <span className="font-mono-code text-[11px] font-semibold text-[#89ceff] tracking-wider uppercase whitespace-nowrap">
-              PANTALLAS LED &amp; WIFI // PAYSANDÚ
+              PANTALLAS LED // PAYSANDÚ
             </span>
           </div>
         </div>
@@ -71,7 +71,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
         {/* Action Buttons Zone */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <a 
-            href="https://wa.me/59899000000?text=Hola%20PubliPantallas.uy,%20quiero%20cotizar%20publicidad%20en%20pantallas%20LED%20y%20puntos%20WiFi%20en%20Paysand%C3%BA"
+            href="https://wa.me/59899000000?text=Hola%20PubliPantallas.uy,%20quiero%20cotizar%20publicidad%20en%20pantallas%20LED%20en%20Paysand%C3%BA"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#00a572] hover:bg-[#4edea3] text-[#002113] hover:text-black font-semibold text-xs sm:text-sm shadow-[0_0_16px_rgba(16,185,129,0.3)] transition-all cursor-pointer whitespace-nowrap"

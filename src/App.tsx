@@ -36,19 +36,19 @@ export default function App() {
   };
 
   // When user selects a solution
-  const handleSelectSolution = (type: 'led' | 'wifi' | 'combo') => {
-    if (type === 'led') {
+  const handleSelectSolution = (type: 'pyme' | 'marcas' | 'agencias') => {
+    if (type === 'pyme') {
       scrollToPricing();
-    } else if (type === 'wifi') {
+    } else if (type === 'marcas') {
       setQuotePrefill({
-        screenInterest: 'Plan Puntos WiFi Cautivo ($190 USD)',
-        notes: 'Consulta sobre publicidad en puntos WiFi con portal cautivo en locales de Paysandú.',
+        screenInterest: 'Plan Comercial Activo ($290 USD)',
+        notes: 'Campaña masiva de marca / lanzamiento en Paysandú.',
       });
       scrollToQuote();
     } else {
       setQuotePrefill({
-        screenInterest: 'Combo Pantallas LED + WiFi ($290 USD)',
-        notes: 'Interés en el Combo Integral: Pantallas LED + Red WiFi en Paysandú.',
+        screenInterest: 'Plan Gran Impacto',
+        notes: 'Consulta para Agencias / Cobertura en pantallas LED en Paysandú.',
       });
       scrollToQuote();
     }
@@ -57,13 +57,13 @@ export default function App() {
   // Quick quote submission from hero
   const handleQuickQuoteSubmit = (data: { name: string; phone: string; service: string }) => {
     const serviceLabels: Record<string, string> = {
-      all: 'Asesoría general para mi negocio en Paysandú',
-      led: 'Pantallas LED Publicitarias',
-      wifi: 'Publicidad en Puntos WiFi con Portal Cautivo',
-      combo: 'Combo Pantallas LED + WiFi'
+      all: 'Asesoría para mi presupuesto en Paysandú',
+      starter: 'Plan Comercio Local ($150 USD)',
+      comercial: 'Plan Comercial Activo ($290 USD)',
+      masivo: 'Plan Gran Impacto / Cobertura Total'
     };
 
-    const label = serviceLabels[data.service] || 'Asesoría general para mi negocio en Paysandú';
+    const label = serviceLabels[data.service] || 'Asesoría para mi negocio en Paysandú';
 
     setQuotePrefill({
       name: data.name,

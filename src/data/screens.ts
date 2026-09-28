@@ -5,72 +5,73 @@ export const BILLBOARD_SCREENS: BillboardScreen[] = [];
 
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    id: 'plan-led',
-    tag: 'PANTALLAS LED PUBLICITARIAS',
-    title: 'Plan Pantallas LED',
-    subtitle: 'Presencia visual continua para comercios y servicios locales en puntos clave de Paysandú.',
+    id: 'starter',
+    tag: 'PLAN STARTER LOCAL',
+    title: 'Comercios & Profesionales',
+    subtitle: 'Ideal para tiendas, clínicas, profesionales y lanzamientos con presupuesto accesible en Paysandú.',
     usdPrice: 150,
     uyuPrice: 5800,
     features: [
       'Emisión continua en pantallas LED de Paysandú',
-      'Cientos de salidas diarias en alta definición',
-      'Asistencia y diseño del anuncio bonificado',
-      'Reporte periódico de emisiones y rotación de spots'
+      '420 salidas diarias del spot publicitario',
+      'Spots de 10 a 15 segundos en alta definición',
+      'Adaptación y diseño de anuncio sin costo adicional',
+      'Reporte periódico de emisiones'
     ],
-    ctaLabel: 'Elegir Plan LED'
+    ctaLabel: 'Elegir Plan Starter'
   },
   {
-    id: 'plan-wifi',
-    tag: 'PORTAL CAUTIVO // 100% ATENCIÓN',
-    title: 'Plan Puntos WiFi Cautivo',
-    subtitle: 'Tu anuncio a pantalla completa en el celular de los usuarios al conectarse al WiFi de locales en Paysandú.',
-    usdPrice: 190,
-    uyuPrice: 7400,
-    isPopular: true,
-    savingsNote: '100% de atención garantizada • Botón a WhatsApp o Web',
-    features: [
-      'Anuncio a pantalla completa obligatorio antes de navegar',
-      'Botón interactivo directo a tu WhatsApp, Instagram o sitio web',
-      'Presencia en red de locales gastronómicos y comerciales de Paysandú',
-      'Sin bloqueadores de publicidad (imposible de saltar)',
-      'Métricas exactas de impresiones, usuarios únicos y clics'
-    ],
-    ctaLabel: 'Elegir Plan WiFi Cautivo'
-  },
-  {
-    id: 'combo-total',
-    tag: 'COMBO INTEGRAL // MÁXIMA COBERTURA',
-    title: 'Combo Pantallas LED + WiFi',
-    subtitle: 'La combinación perfecta: impacto visual en la vía pública + presencia directa en los celulares de los clientes.',
+    id: 'comercial',
+    tag: 'PLAN COMERCIAL ACTIVO',
+    title: 'Alta Frecuencia & Visibilidad',
+    subtitle: 'Mayor presencia y rotación para destacar tu marca ante todo el tránsito comercial de Paysandú.',
     usdPrice: 290,
     uyuPrice: 11300,
-    savingsNote: 'Tarifa bonificada contratando ambos canales',
+    isPopular: true,
+    savingsNote: 'El más elegido • Máxima frecuencia diaria',
     features: [
-      'Presencia en pantallas LED de vía pública en Paysandú',
-      'Anuncios en red de puntos WiFi con portal cautivo',
-      'Estrategia omnicanal (visibilidad en la calle y en el móvil)',
-      'Cambio de piezas publicitarias incluido en el mes',
-      'Reporte consolidado de impactos y conexiones'
+      'Emisión intensiva (más de 840 salidas diarias)',
+      'Frecuencia destacada en horarios pico y comerciales',
+      'Cambio de spot o promo sin costo durante el mes',
+      'Diseño publicitario profesional incluido',
+      'Reporte detallado y auditoría de transmisión'
     ],
-    ctaLabel: 'Elegir Combo Total'
+    ctaLabel: 'Elegir Plan Comercial'
+  },
+  {
+    id: 'gran-impacto',
+    tag: 'PLAN GRAN IMPACTO',
+    title: 'Dominancia & Cobertura Total',
+    subtitle: 'Para marcas líderes, eventos, ferias e inauguraciones que exigen presencia masiva ininterrumpida.',
+    usdPrice: 'custom',
+    savingsNote: 'Exclusividad de rubro y descuento por volumen',
+    features: [
+      'Máxima frecuencia y prioridad en pantalla',
+      'Bloqueo y exclusividad frente a competidores directos',
+      'Ideal para lanzamientos, temporadas o eventos masivos',
+      'Múltiples versiones de anuncios rotativos',
+      'Asesor comercial y soporte técnico dedicado'
+    ],
+    ctaLabel: 'Hablar con un Asesor'
   }
 ];
 
 export const HOW_IT_WORKS_STEPS = [
   {
     step: '1',
-    title: 'Elige tu Canal o Combo',
-    description: 'Selecciona Pantallas LED, Publicidad en Puntos WiFi con Portal Cautivo o el Combo Total para tu negocio en Paysandú.'
+    title: 'Elige tu Plan',
+    description: 'Selecciona el plan de pantallas LED que mejor se adapte al presupuesto y objetivo de tu negocio en Paysandú.'
   },
   {
     step: '2',
-    title: 'Envíanos tu Anuncio o Promo',
-    description: 'Envíanos tu flyer, video o imagen promocional. Si no tienes material listo, te ayudamos a diseñarlo sin costo.'
+    title: 'Envíanos tu Anuncio o Flyer',
+    description: 'Envía tu imagen, video o idea promocional. Si no tienes material listo, nuestro equipo te lo diseña o adapta sin costo.'
   },
   {
     step: '3',
-    title: '¡Activación y Reporte!',
-    description: 'Activamos tu campaña en pantallas LED y en la red WiFi de Paysandú, con métricas claras de visualizaciones y clics.'
+    title: '¡Lanzamiento y Reporte!',
+    description: 'Activamos tu campaña en las pantallas LED de Paysandú y te enviamos el comprobante y reporte de transmisión.'
   }
 ];
+
 

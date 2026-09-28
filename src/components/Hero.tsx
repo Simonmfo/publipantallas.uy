@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Monitor, Users, Zap, DollarSign, CheckCircle2, ShieldCheck, Sparkles, Wifi } from 'lucide-react';
+import { Send, Monitor, Users, Zap, DollarSign, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 
 interface HeroProps {
   onQuickQuoteSubmit: (data: { name: string; phone: string; service: string }) => void;
@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4edea3] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4edea3]"></span>
           </span>
-          <span>PUBLICIDAD DIGITAL &amp; PUNTOS WIFI EN PAYSANDÚ</span>
+          <span>PUBLICIDAD EXTERIOR DIGITAL EN PAYSANDÚ</span>
         </div>
 
         {/* Main Grid: Copy vs Quick Quote Form */}
@@ -54,15 +54,15 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Left Column: Heading and Value Proposition */}
           <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-5">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#dae2fd] tracking-tight leading-[1.12] text-balance">
-              Haz que tu negocio se destaque en{' '}
+              Haz que tu negocio se destaque en las{' '}
               <span className="text-[#89ceff] bg-gradient-to-r from-[#89ceff] to-[#0ea5e9] bg-clip-text text-transparent">
-                pantallas LED y puntos WiFi
+                mejores pantallas LED
               </span>{' '}
               de Paysandú
             </h1>
             
             <p className="text-lg sm:text-xl text-[#bec8d2] max-w-2xl leading-relaxed">
-              Publicidad exterior en pantallas LED y anuncios interactivos en portales cautivos WiFi. Llega a miles de clientes en la vía pública y directo a sus celulares cuando se conectan al WiFi en comercios y locales de Paysandú.
+              Publicidad exterior digital de alto impacto en Paysandú. Llega a miles de personas todos los días en las esquinas y avenidas más transitadas con spots en alta resolución y planes a tu medida.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
@@ -94,16 +94,16 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Micro proof badges */}
             <div className="flex flex-wrap items-center gap-6 pt-3 text-xs text-[#94a3b8] font-mono-code">
               <span className="flex items-center gap-1.5">
-                <Wifi className="w-4 h-4 text-[#4edea3]" />
-                Portal cautivo 100% visible
-              </span>
-              <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#4edea3]" />
-                Métricas reales de conexión
+                Auditoría y reporte de emisión
               </span>
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-[#89ceff]" />
                 Diseño de anuncio bonificado
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Zap className="w-4 h-4 text-[#4edea3]" />
+                Sin contratos de permanencia
               </span>
             </div>
           </div>
@@ -168,17 +168,17 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
 
                 <div>
-                  <label htmlFor="hero-service" className="sr-only">Canal o Servicio</label>
+                  <label htmlFor="hero-service" className="sr-only">Plan o Servicio</label>
                   <select
                     id="hero-service"
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                     className="w-full px-3.5 py-3 rounded-lg bg-[#222a3d] text-[#dae2fd] text-sm border border-transparent focus:border-[#0ea5e9] focus:outline-none transition-all"
                   >
-                    <option value="all">Asesoría para mi negocio en Paysandú</option>
-                    <option value="led">Pantallas LED Publicitarias</option>
-                    <option value="wifi">Publicidad en Puntos WiFi (Portal Cautivo)</option>
-                    <option value="combo">Combo Completo: Pantallas LED + WiFi</option>
+                    <option value="all">Asesoría para mi presupuesto en Paysandú</option>
+                    <option value="starter">Plan Comercio Local ($150 USD)</option>
+                    <option value="comercial">Plan Comercial Activo ($290 USD)</option>
+                    <option value="masivo">Plan Gran Impacto / Cobertura Total</option>
                   </select>
                 </div>
 
@@ -203,38 +203,38 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-white block tracking-tight">
-                LED &amp; WiFi
+                Pantallas LED
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Canales de Alto Impacto
+                Puntos de Gran Tráfico
               </span>
             </div>
           </div>
 
           <div className="flex items-center gap-3 p-3 rounded-lg bg-[#171f33] border border-[#222a3d]/60">
             <div className="w-11 h-11 rounded-lg bg-[#00a572]/10 text-[#4edea3] flex items-center justify-center shrink-0">
-              <Wifi className="w-6 h-6" />
+              <Users className="w-6 h-6" />
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-[#4edea3] block tracking-tight">
-                100% Atención
+                +50.000
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Portal Cautivo en Celulares
+                Impactos Diarios Estimados
               </span>
             </div>
           </div>
 
           <div className="flex items-center gap-3 p-3 rounded-lg bg-[#171f33] border border-[#222a3d]/60">
             <div className="w-11 h-11 rounded-lg bg-[#7bd0ff]/10 text-[#7bd0ff] flex items-center justify-center shrink-0">
-              <Users className="w-6 h-6" />
+              <Zap className="w-6 h-6" />
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-[#7bd0ff] block tracking-tight">
-                Paysandú
+                Alta Resolución
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Audiencia Local Activa
+                Spots de Gran Visibilidad
               </span>
             </div>
           </div>
@@ -257,4 +257,5 @@ export const Hero: React.FC<HeroProps> = ({
     </section>
   );
 };
+
 

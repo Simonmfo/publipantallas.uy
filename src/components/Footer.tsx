@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
               </span>
             </div>
             <p className="text-sm text-[#bec8d2] leading-relaxed">
-              La plataforma de publicidad digital y puntos WiFi de Paysandú. Combinamos pantallas LED en vía pública y anuncios interactivos con portal cautivo para impulsar tus ventas.
+              La plataforma de publicidad exterior digital en pantallas LED de Paysandú. Ayudamos a comercios y marcas a aumentar sus ventas y presencia todos los días.
             </p>
             <div className="flex items-center gap-2 text-[#4edea3] font-mono-code text-xs font-bold pt-1">
               <CheckCircle2 className="w-4 h-4" />
@@ -29,7 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           {/* Services & Channels */}
           <div className="space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
-              Canales Publicitarios
+              Servicios
             </span>
             <ul className="space-y-2 text-sm text-[#bec8d2]">
               <li>
@@ -39,22 +39,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
               </li>
               <li>
                 <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
-                  Puntos WiFi con Portal Cautivo
+                  Planes para Comercios y PYMEs
                 </a>
               </li>
               <li>
                 <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
-                  Combo Integral (LED + WiFi)
+                  Campañas de Marca y Lanzamientos
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Anuncios en Gastronomía y Bares
+                  Cobertura para Agencias y Medios
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Campañas Comerciales y PYMEs
+                  Asesoría y Diseño Bonificado
                 </a>
               </li>
             </ul>
@@ -63,27 +63,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           {/* Solutions */}
           <div className="space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
-              Beneficios
+              Ventajas
             </span>
             <ul className="space-y-2 text-sm text-[#bec8d2]">
               <li>
                 <a href="#como-funciona" className="hover:text-[#0ea5e9] transition-colors">
-                  100% Atención en Celulares
+                  Alta Definición Outdoor
                 </a>
               </li>
               <li>
                 <a href="#como-funciona" className="hover:text-[#0ea5e9] transition-colors">
-                  Sin Bloqueadores de Anuncios
+                  Más de 400 Salidas Diarias
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Botón Directo a WhatsApp o Web
+                  Sin Contratos Forzados
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Asesoría y Diseño Bonificado
+                  Reportes Certificados de Emisión
                 </a>
               </li>
             </ul>
@@ -127,7 +127,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#222a3d] flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#88929b]">
           <div>
-            © 2025 PubliPantallas.uy. Publicidad exterior digital y puntos WiFi en Paysandú, Uruguay. Todos los derechos reservados.
+            © 2025 PubliPantallas.uy. Publicidad exterior digital en pantallas LED en Paysandú, Uruguay. Todos los derechos reservados.
           </div>
           <div className="flex items-center gap-6">
             <span className="text-[#4edea3]">Lanza tu campaña en 24h</span>

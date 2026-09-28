@@ -1,6 +1,6 @@
 {
-  "name": "PubliPantallas.uy - Publicidad LED & WiFi en Paysandú",
-  "description": "Publicidad exterior LED y portal cautivo WiFi en Paysandú, Uruguay.",
+  "name": "PubliPantallas.uy - Publicidad LED en Paysandú",
+  "description": "Publicidad exterior digital en pantallas LED en Paysandú, Uruguay.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
