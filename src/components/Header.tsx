@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { MessageCircle, Menu, X, Radio, ArrowUpRight, MonitorPlay } from 'lucide-react';
+import { MessageCircle, Menu, X, ArrowUpRight, MonitorPlay } from 'lucide-react';
 
 interface HeaderProps {
   onOpenQuote: () => void;
-  onOpenMap: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenQuote, onOpenMap }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [logoLoaded, setLogoLoaded] = useState(true);
 
@@ -34,34 +33,20 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote, onOpenMap }) => {
             </span>
           </a>
 
-          {/* Live Network Status Pill */}
-          <div className="hidden 2xl:flex items-center gap-2 px-3 py-1 bg-[#171f33] border border-[#222a3d] rounded-full shadow-[0_0_16px_rgba(16,185,129,0.15)]">
+          {/* Status Pill */}
+          <div className="hidden xl:flex items-center gap-2 px-3 py-1 bg-[#171f33] border border-[#222a3d] rounded-full shadow-[0_0_16px_rgba(14,165,233,0.15)]">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4edea3] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4edea3]"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0ea5e9] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0ea5e9]"></span>
             </span>
-            <span className="font-mono-code text-[11px] font-semibold text-[#4edea3] tracking-wider uppercase whitespace-nowrap">
-              RED ACTIVA: 48 PANTALLAS
+            <span className="font-mono-code text-[11px] font-semibold text-[#89ceff] tracking-wider uppercase whitespace-nowrap">
+              RESERVAS ANTICIPADAS // MONTEVIDEO
             </span>
           </div>
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-medium text-[#bec8d2]">
-          <a 
-            href="#pantallas" 
-            className="hover:text-white transition-colors py-1 hover:border-b-2 hover:border-[#0ea5e9] whitespace-nowrap"
-          >
-            Pantallas
-          </a>
-          <button 
-            type="button" 
-            onClick={onOpenMap}
-            className="hover:text-[#89ceff] transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
-          >
-            <span>Mapa DOOH</span>
-            <Radio className="w-3.5 h-3.5 text-[#0ea5e9]" />
-          </button>
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium text-[#bec8d2]">
           <a 
             href="#planes" 
             className="hover:text-white transition-colors py-1 hover:border-b-2 hover:border-[#0ea5e9] whitespace-nowrap"
@@ -120,28 +105,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote, onOpenMap }) => {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#0b1326] border-b border-[#222a3d] px-4 pt-3 pb-6 space-y-3">
           <div className="flex items-center justify-between pb-2 border-b border-[#222a3d]">
-            <span className="text-xs font-mono-code text-[#4edea3] flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full bg-[#4edea3] animate-pulse"></span>
-              48 Pantallas Activas
+            <span className="text-xs font-mono-code text-[#89ceff] flex items-center gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-[#0ea5e9] animate-pulse"></span>
+              Lanzamiento Montevideo
             </span>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenMap();
-              }}
-              className="text-xs text-[#0ea5e9] font-medium"
-            >
-              Ver Mapa
-            </button>
           </div>
           <nav className="flex flex-col gap-2.5 text-sm text-[#dae2fd]">
-            <a 
-              href="#pantallas" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-1.5 px-2 rounded hover:bg-[#171f33]"
-            >
-              Pantallas en Montevideo
-            </a>
             <a 
               href="#planes" 
               onClick={() => setMobileMenuOpen(false)}

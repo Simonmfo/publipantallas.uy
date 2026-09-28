@@ -152,14 +152,14 @@ export const PRICING_PLANS: PricingPlan[] = [
     id: 'starter',
     tag: 'PLAN STARTER LOCAL',
     title: 'Para Comercios de Barrio',
-    subtitle: 'Ideal para tiendas, clínicas, profesionales y lanzamientos barriales con presupuesto acotado.',
+    subtitle: 'Ideal para tiendas, clínicas, profesionales y lanzamientos barriales con presupuesto accesible.',
     usdPrice: 150,
     uyuPrice: 5800,
     features: [
-      '1 Pantalla Premium a tu elección',
+      '1 Pantalla en ubicación estratégica a elección',
       '420 salidas diarias (cada 2 minutos)',
       'Asistencia gratuita para adaptar tu diseño',
-      'Reporte mensual de emisiones'
+      'Reporte periódico de emisiones'
     ],
     ctaLabel: 'Elegir Plan Starter'
   },
@@ -171,9 +171,9 @@ export const PRICING_PLANS: PricingPlan[] = [
     usdPrice: 490,
     uyuPrice: 19100,
     isPopular: true,
-    savingsNote: 'Ahorro del 25% respecto a pantallas individuales',
+    savingsNote: 'Tarifa preferencial de prelanzamiento',
     features: [
-      '5 Pantallas Estratégicas en Montevideo',
+      'Circuito de 5 ubicaciones estratégicas en Montevideo',
       '2.100 salidas diarias combinadas',
       'Frecuencia de 1 spot cada 60 segundos',
       'Cambio de spot/anuncio ilimitado en el mes',
@@ -185,12 +185,12 @@ export const PRICING_PLANS: PricingPlan[] = [
     id: 'cobertura-total',
     tag: 'PLAN COBERTURA TOTAL',
     title: 'Dominancia de Marca',
-    subtitle: 'Red completa de 48 pantallas para grandes campañas institucionales, ferias y lanzamientos nacionales.',
+    subtitle: 'Red completa de pantallas para grandes campañas institucionales, ferias y lanzamientos masivos.',
     usdPrice: 'custom',
     savingsNote: 'Descuento por volumen y exclusividad de rubro',
     features: [
-      'Red completa 48 pantallas en simultáneo',
-      'Más de 1.800.000 impactos diarios potenciales',
+      'Red completa multizona en simultáneo',
+      'Alto volumen de impactos diarios potenciales',
       'Exclusividad horaria y bloqueo de competidores',
       'Certificación y auditoría fotográfica en vivo'
     ],
@@ -201,17 +201,17 @@ export const PRICING_PLANS: PricingPlan[] = [
 export const HOW_IT_WORKS_STEPS = [
   {
     step: '1',
-    title: 'Elige tus Pantallas o Zona',
-    description: 'Selecciona el punto específico de la ciudad donde circula tu cliente ideal (Centro, Pocitos, Tres Cruces o toda la red).'
+    title: 'Elige tu Plan o Zona',
+    description: 'Selecciona la zona o circuito de Montevideo donde circula tu cliente ideal (Centro, Pocitos, Tres Cruces o Multizona).'
   },
   {
     step: '2',
     title: 'Envíanos tu Anuncio o Imagen',
-    description: 'Sube tu video o imagen promocional. ¿No tienes diseño listo? Nuestro equipo adapta tu logo y ofertas sin costo adicional.'
+    description: 'Envía tu video o imagen publicitaria. Si no tienes diseño listo, nuestro equipo te ayuda a adaptarlo sin costo.'
   },
   {
     step: '3',
-    title: '¡En Vivo en Menos de 24 Horas!',
-    description: 'Tu campaña se activa en las pantallas seleccionadas. Recibes fotos y video comprobante de tu anuncio transmitiéndose.'
+    title: '¡Lanzamiento y Reporte!',
+    description: 'Activamos tu campaña en los puntos acordados y te enviamos el comprobante y reporte de transmisión.'
   }
 ];

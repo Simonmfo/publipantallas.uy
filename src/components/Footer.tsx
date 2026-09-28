@@ -29,31 +29,31 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           {/* Zones */}
           <div className="space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
-              Zonas Destacadas
+              Zonas Estratégicas
             </span>
             <ul className="space-y-2 text-sm text-[#bec8d2]">
               <li>
-                <a href="#pantallas" className="hover:text-[#0ea5e9] transition-colors">
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
                   Centro &amp; 18 de Julio
                 </a>
               </li>
               <li>
-                <a href="#pantallas" className="hover:text-[#0ea5e9] transition-colors">
-                  Terminal Tres Cruces
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
+                  Terminal Tres Cruces &amp; Accesos
                 </a>
               </li>
               <li>
-                <a href="#pantallas" className="hover:text-[#0ea5e9] transition-colors">
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
                   Rambla de Pocitos &amp; Kibón
                 </a>
               </li>
               <li>
-                <a href="#pantallas" className="hover:text-[#0ea5e9] transition-colors">
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
                   Punta Carretas Shopping
                 </a>
               </li>
               <li>
-                <a href="#pantallas" className="hover:text-[#0ea5e9] transition-colors">
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
                   World Trade Center &amp; Buceo
                 </a>
               </li>

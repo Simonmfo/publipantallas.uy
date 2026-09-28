@@ -67,15 +67,15 @@ export const Hero: React.FC<HeroProps> = ({
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
               <a
-                href="#pantallas"
+                href="#planes"
                 onClick={(e) => {
                   e.preventDefault();
                   onExploreScreens();
                 }}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#0ea5e9] hover:bg-[#89ceff] text-[#001e2f] font-bold text-base shadow-[0_0_24px_rgba(14,165,233,0.4)] transition-all cursor-pointer group"
               >
-                <Eye className="w-5 h-5 text-[#001e2f] group-hover:scale-110 transition-transform" />
-                <span>Ver Pantallas y Precios</span>
+                <DollarSign className="w-5 h-5 text-[#001e2f] group-hover:scale-110 transition-transform" />
+                <span>Ver Planes &amp; Precios</span>
               </a>
 
               <a
@@ -95,7 +95,7 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="flex items-center gap-6 pt-3 text-xs text-[#94a3b8] font-mono-code">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#4edea3]" />
-                Auditoría fotográfica en vivo
+                Reporte y auditoría de emisión
               </span>
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-[#89ceff]" />
@@ -116,7 +116,7 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             <p className="text-sm text-[#bec8d2] leading-snug">
-              Déjanos tu contacto y recibe el catálogo de ubicaciones con disponibilidad para esta semana.
+              Déjanos tu contacto y recibe la propuesta personalizada con tarifas de prelanzamiento.
             </p>
 
             {submitted ? (
@@ -126,7 +126,7 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
                 <h4 className="text-white font-bold text-base">¡Propuesta Solicitada!</h4>
                 <p className="text-xs text-[#bec8d2]">
-                  Un asesor de PubliPantallas.uy te enviará la disponibilidad y precios al número ingresado.
+                  Un asesor de PubliPantallas.uy te enviará la propuesta y disponibilidad al número ingresado.
                 </p>
                 <button
                   type="button"
@@ -172,7 +172,7 @@ export const Hero: React.FC<HeroProps> = ({
                     className="w-full px-3.5 py-3 rounded-lg bg-[#222a3d] text-[#dae2fd] text-sm border border-transparent focus:border-[#0ea5e9] focus:outline-none transition-all"
                   >
                     <option value="all">Quiero presencia en todo Montevideo</option>
-                    <option value="centro">Centro &amp; 18 de Julio</option>
+                    <option value="centro">Centro, Cordón &amp; 18 de Julio</option>
                     <option value="pocitos">Pocitos, Punta Carretas &amp; Rambla</option>
                     <option value="tres-cruces">Terminal Tres Cruces &amp; Accesos</option>
                     <option value="wtc">World Trade Center &amp; Shopping</option>
@@ -200,10 +200,10 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-white block tracking-tight">
-                48 Pantallas
+                Zonas Clave
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Ubicaciones Premium
+                Puntos Estratégicos
               </span>
             </div>
           </div>
@@ -217,7 +217,7 @@ export const Hero: React.FC<HeroProps> = ({
                 +1.8 Millones
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Vistas Diarias Reales
+                Impactos Potenciales
               </span>
             </div>
           </div>
@@ -228,10 +228,10 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-[#7bd0ff] block tracking-tight">
-                En 24 Horas
+                Prelanzamiento
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Lanza tu campaña hoy
+                Tarifas Preferenciales
               </span>
             </div>
           </div>

@@ -156,7 +156,7 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
 
             <div className="flex flex-col gap-1.5">
               <label htmlFor="form-interes" className="font-mono-code text-xs text-[#bec8d2] font-medium">
-                ¿Qué zona o pantalla te interesa más?
+                ¿Qué plan o zona te interesa cotizar?
               </label>
               <select
                 id="form-interes"
@@ -164,13 +164,14 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
                 onChange={(e) => setScreenInterest(e.target.value)}
                 className="p-3 rounded-xl bg-[#222a3d] text-[#dae2fd] border border-[#222a3d] focus:border-[#0ea5e9] focus:outline-none transition-all"
               >
-                <option value="todas">Quiero recomendaciones para mi presupuesto</option>
-                <option value="18 de Julio & Ejido (Centro)">18 de Julio &amp; Ejido (Centro)</option>
-                <option value="Tres Cruces Shopping & Terminal">Tres Cruces Shopping &amp; Terminal</option>
-                <option value="Rambla Pocitos & Kibón">Rambla Pocitos &amp; Kibón</option>
-                <option value="Doble Pantalla Punta Carretas">Doble Pantalla Punta Carretas</option>
-                <option value="Circuito de 5 Pantallas ($490 USD)">Circuito de 5 Pantallas ($490 USD)</option>
-                <option value="Red Completa 48 Pantallas">Red Completa 48 Pantallas</option>
+                <option value="todas">Quiero asesoría y recomendaciones según mi presupuesto</option>
+                <option value="Plan Starter Local ($150 USD)">Plan Starter Local - Comercio de Barrio ($150 USD)</option>
+                <option value="Plan Circuito Urbano ($490 USD)">Plan Circuito Urbano - 5 Pantallas ($490 USD)</option>
+                <option value="Plan Cobertura Total">Plan Cobertura Total - Gran Marca / Lanzamiento</option>
+                <option value="Zona Centro & 18 de Julio">Zona Centro &amp; 18 de Julio</option>
+                <option value="Zona Pocitos, Punta Carretas & Rambla">Zona Pocitos, Punta Carretas &amp; Rambla</option>
+                <option value="Zona Terminal Tres Cruces">Zona Terminal Tres Cruces &amp; Accesos</option>
+                <option value="Zona Buceo & World Trade Center">Zona Buceo &amp; World Trade Center</option>
               </select>
             </div>
 
