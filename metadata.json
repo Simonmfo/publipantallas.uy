@@ -1,0 +1,6 @@
+{
+  "name": "PubliPantallas.uy - Red DOOH Montevideo",
+  "description": "Red de pantallas LED publicitarias y Digital Signage de alto impacto en Montevideo, Uruguay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
