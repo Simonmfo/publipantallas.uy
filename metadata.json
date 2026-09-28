@@ -1,6 +1,6 @@
 {
-  "name": "PubliPantallas.uy - Red DOOH Montevideo",
-  "description": "Red de pantallas LED publicitarias y Digital Signage de alto impacto en Montevideo, Uruguay.",
+  "name": "PubliPantallas.uy - Publicidad LED & WiFi en Paysandú",
+  "description": "Publicidad exterior LED y portal cautivo WiFi en Paysandú, Uruguay.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

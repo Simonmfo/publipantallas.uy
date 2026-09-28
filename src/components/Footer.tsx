@@ -18,43 +18,43 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
               </span>
             </div>
             <p className="text-sm text-[#bec8d2] leading-relaxed">
-              La red de pantallas LED publicitarias más vista de Montevideo. Ayudamos a comercios y marcas a aumentar sus ventas y presencia todos los días.
+              La plataforma de publicidad digital y puntos WiFi de Paysandú. Combinamos pantallas LED en vía pública y anuncios interactivos con portal cautivo para impulsar tus ventas.
             </p>
             <div className="flex items-center gap-2 text-[#4edea3] font-mono-code text-xs font-bold pt-1">
               <CheckCircle2 className="w-4 h-4" />
-              <span>Atención Comercial Rápida en Montevideo</span>
+              <span>Atención Comercial en Paysandú</span>
             </div>
           </div>
 
-          {/* Zones */}
+          {/* Services & Channels */}
           <div className="space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
-              Zonas Estratégicas
+              Canales Publicitarios
             </span>
             <ul className="space-y-2 text-sm text-[#bec8d2]">
               <li>
-                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Centro &amp; 18 de Julio
+                <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
+                  Pantallas LED Publicitarias
+                </a>
+              </li>
+              <li>
+                <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
+                  Puntos WiFi con Portal Cautivo
+                </a>
+              </li>
+              <li>
+                <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
+                  Combo Integral (LED + WiFi)
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Terminal Tres Cruces &amp; Accesos
+                  Anuncios en Gastronomía y Bares
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Rambla de Pocitos &amp; Kibón
-                </a>
-              </li>
-              <li>
-                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Punta Carretas Shopping
-                </a>
-              </li>
-              <li>
-                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  World Trade Center &amp; Buceo
+                  Campañas Comerciales y PYMEs
                 </a>
               </li>
             </ul>
@@ -63,27 +63,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           {/* Solutions */}
           <div className="space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
-              Soluciones
+              Beneficios
             </span>
             <ul className="space-y-2 text-sm text-[#bec8d2]">
               <li>
-                <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
-                  Planes para Comercios y PYMEs
+                <a href="#como-funciona" className="hover:text-[#0ea5e9] transition-colors">
+                  100% Atención en Celulares
                 </a>
               </li>
               <li>
-                <a href="#planes" className="hover:text-[#0ea5e9] transition-colors">
-                  Circuitos para Marcas
-                </a>
-              </li>
-              <li>
-                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Cobertura Agencias &amp; Medios
+                <a href="#como-funciona" className="hover:text-[#0ea5e9] transition-colors">
+                  Sin Bloqueadores de Anuncios
                 </a>
               </li>
               <li>
                 <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
-                  Asesoría de diseño sin costo
+                  Botón Directo a WhatsApp o Web
+                </a>
+              </li>
+              <li>
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
+                  Asesoría y Diseño Bonificado
                 </a>
               </li>
             </ul>
@@ -95,7 +95,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
               Contacto Comercial
             </span>
             <p className="text-sm text-[#bec8d2]">
-              Montevideo, Uruguay
+              Paysandú, Uruguay
             </p>
             <p className="font-mono-code text-sm text-[#0ea5e9] font-bold">
               <a 
@@ -127,11 +127,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#222a3d] flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#88929b]">
           <div>
-            © 2025 PubliPantallas.uy. Publicidad exterior digital en Uruguay. Todos los derechos reservados.
+            © 2025 PubliPantallas.uy. Publicidad exterior digital y puntos WiFi en Paysandú, Uruguay. Todos los derechos reservados.
           </div>
           <div className="flex items-center gap-6">
             <span className="text-[#4edea3]">Lanza tu campaña en 24h</span>
-            <span className="text-[#0ea5e9]">Soporte local en Montevideo</span>
+            <span className="text-[#0ea5e9]">Soporte local en Paysandú</span>
           </div>
         </div>
       </div>

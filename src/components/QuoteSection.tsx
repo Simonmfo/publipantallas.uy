@@ -55,7 +55,7 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hola PubliPantallas.uy! Mi nombre es ${name || 'un cliente'} de la empresa ${company || 'en Montevideo'}. Me interesa cotizar presencia publicitaria en: ${screenInterest}. Mi teléfono es: ${phone}.`
+    `Hola PubliPantallas.uy! Mi nombre es ${name || 'un cliente'} de la empresa ${company || 'en Paysandú'}. Me interesa cotizar presencia publicitaria en: ${screenInterest} en Paysandú. Mi teléfono es: ${phone}.`
   );
 
   return (
@@ -67,13 +67,13 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
         {/* Section Header */}
         <div className="text-center flex flex-col gap-2 relative z-10">
           <span className="font-mono-code text-xs font-bold text-[#0ea5e9] tracking-widest uppercase">
-            ASESORÍA INMEDIATA
+            ASESORÍA INMEDIATA EN PAYSANDÚ
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Cotiza tu Campaña en 1 Minuto
           </h2>
           <p className="text-base text-[#bec8d2]">
-            Cuéntanos qué necesitas y un asesor te responderá con precios exactos y ubicaciones disponibles.
+            Cuéntanos qué necesitas y un asesor te responderá con precios y disponibilidad para tu negocio en Paysandú.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
               ¡Solicitud Recibida con Éxito!
             </h3>
             <p className="text-sm text-[#bec8d2] max-w-lg">
-              Gracias <strong>{name}</strong>. Un asesor de PubliPantallas.uy revisará la disponibilidad de la pantalla seleccionada ({screenInterest}) y se comunicará a tu WhatsApp <strong>{phone}</strong> en menos de 15 minutos.
+              Gracias <strong>{name}</strong>. Un asesor de PubliPantallas.uy revisará la propuesta para <strong>{screenInterest}</strong> y se comunicará a tu WhatsApp <strong>{phone}</strong> en menos de 15 minutos.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row gap-3">
               <a
@@ -134,7 +134,7 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
                 required
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                placeholder="Ej. Pizzería del Parque / Marca X"
+                placeholder="Ej. Restaurante / Comercio en Paysandú"
                 className="p-3 rounded-xl bg-[#222a3d] text-white border border-[#222a3d] focus:border-[#0ea5e9] focus:outline-none transition-all placeholder-[#88929b]"
               />
             </div>
@@ -156,7 +156,7 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
 
             <div className="flex flex-col gap-1.5">
               <label htmlFor="form-interes" className="font-mono-code text-xs text-[#bec8d2] font-medium">
-                ¿Qué plan o zona te interesa cotizar?
+                ¿Qué formato o plan te interesa cotizar?
               </label>
               <select
                 id="form-interes"
@@ -165,13 +165,11 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
                 className="p-3 rounded-xl bg-[#222a3d] text-[#dae2fd] border border-[#222a3d] focus:border-[#0ea5e9] focus:outline-none transition-all"
               >
                 <option value="todas">Quiero asesoría y recomendaciones según mi presupuesto</option>
-                <option value="Plan Starter Local ($150 USD)">Plan Starter Local - Comercio de Barrio ($150 USD)</option>
-                <option value="Plan Circuito Urbano ($490 USD)">Plan Circuito Urbano - 5 Pantallas ($490 USD)</option>
-                <option value="Plan Cobertura Total">Plan Cobertura Total - Gran Marca / Lanzamiento</option>
-                <option value="Zona Centro & 18 de Julio">Zona Centro &amp; 18 de Julio</option>
-                <option value="Zona Pocitos, Punta Carretas & Rambla">Zona Pocitos, Punta Carretas &amp; Rambla</option>
-                <option value="Zona Terminal Tres Cruces">Zona Terminal Tres Cruces &amp; Accesos</option>
-                <option value="Zona Buceo & World Trade Center">Zona Buceo &amp; World Trade Center</option>
+                <option value="Plan Pantallas LED ($150 USD)">Plan Pantallas LED - Vía Pública en Paysandú ($150 USD)</option>
+                <option value="Plan Puntos WiFi Cautivo ($190 USD)">Plan Puntos WiFi Cautivo - 100% Atención en Celular ($190 USD)</option>
+                <option value="Combo Pantallas LED + WiFi ($290 USD)">Combo Pantallas LED + WiFi - Cobertura Total ($290 USD)</option>
+                <option value="Publicidad en Puntos WiFi (Portal Cautivo)">Solo Publicidad en Puntos WiFi (Portal Cautivo)</option>
+                <option value="Pantallas LED Publicitarias">Solo Pantallas LED Publicitarias</option>
               </select>
             </div>
 

@@ -36,39 +36,40 @@ export default function App() {
   };
 
   // When user selects a solution
-  const handleSelectSolution = (type: 'pyme' | 'marcas' | 'agencias') => {
-    if (type === 'pyme') {
+  const handleSelectSolution = (type: 'led' | 'wifi' | 'combo') => {
+    if (type === 'led') {
       scrollToPricing();
-    } else if (type === 'marcas') {
+    } else if (type === 'wifi') {
       setQuotePrefill({
-        screenInterest: 'Plan Circuito Urbano ($490 USD)',
-        notes: 'Campaña masiva de gran marca / lanzamiento en avenidas principales de Montevideo.',
+        screenInterest: 'Plan Puntos WiFi Cautivo ($190 USD)',
+        notes: 'Consulta sobre publicidad en puntos WiFi con portal cautivo en locales de Paysandú.',
       });
       scrollToQuote();
     } else {
       setQuotePrefill({
-        screenInterest: 'Plan Cobertura Total',
-        notes: 'Consulta para Agencias / Cobertura Total en Montevideo.',
+        screenInterest: 'Combo Pantallas LED + WiFi ($290 USD)',
+        notes: 'Interés en el Combo Integral: Pantallas LED + Red WiFi en Paysandú.',
       });
       scrollToQuote();
     }
   };
 
   // Quick quote submission from hero
-  const handleQuickQuoteSubmit = (data: { name: string; phone: string; zone: string }) => {
-    const zoneLabels: Record<string, string> = {
-      all: 'Quiero presencia en todo Montevideo',
-      centro: 'Zona Centro, Cordón & 18 de Julio',
-      pocitos: 'Zona Pocitos, Punta Carretas & Rambla',
-      'tres-cruces': 'Zona Terminal Tres Cruces & Accesos',
-      wtc: 'Zona Buceo & World Trade Center'
+  const handleQuickQuoteSubmit = (data: { name: string; phone: string; service: string }) => {
+    const serviceLabels: Record<string, string> = {
+      all: 'Asesoría general para mi negocio en Paysandú',
+      led: 'Pantallas LED Publicitarias',
+      wifi: 'Publicidad en Puntos WiFi con Portal Cautivo',
+      combo: 'Combo Pantallas LED + WiFi'
     };
+
+    const label = serviceLabels[data.service] || 'Asesoría general para mi negocio en Paysandú';
 
     setQuotePrefill({
       name: data.name,
       phone: data.phone,
-      screenInterest: zoneLabels[data.zone] || 'Asesoría general para mi presupuesto',
-      notes: `Solicitud de propuesta rápida para zona: ${zoneLabels[data.zone] || data.zone}`,
+      screenInterest: label,
+      notes: `Solicitud de propuesta rápida para: ${label} en Paysandú`,
     });
   };
 

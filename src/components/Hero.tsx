@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Eye, Send, Monitor, Users, Zap, DollarSign, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { Send, Monitor, Users, Zap, DollarSign, CheckCircle2, ShieldCheck, Sparkles, Wifi } from 'lucide-react';
 
 interface HeroProps {
-  onQuickQuoteSubmit: (data: { name: string; phone: string; zone: string }) => void;
+  onQuickQuoteSubmit: (data: { name: string; phone: string; service: string }) => void;
   onExploreScreens: () => void;
   onNavigateToQuote: () => void;
 }
@@ -14,14 +14,14 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
-  const [zone, setZone] = useState('all');
+  const [service, setService] = useState('all');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!phone.trim()) {
-      alert('Por favor ingresa tu número de celular o WhatsApp para enviarte el catálogo.');
+      alert('Por favor ingresa tu número de celular o WhatsApp para enviarte la propuesta.');
       return;
     }
 
@@ -29,7 +29,7 @@ export const Hero: React.FC<HeroProps> = ({
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
-      onQuickQuoteSubmit({ name, phone, zone });
+      onQuickQuoteSubmit({ name, phone, service });
     }, 600);
   };
 
@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4edea3] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4edea3]"></span>
           </span>
-          <span>PUBLICIDAD EXTERIOR DIGITAL EN MONTEVIDEO</span>
+          <span>PUBLICIDAD DIGITAL &amp; PUNTOS WIFI EN PAYSANDÚ</span>
         </div>
 
         {/* Main Grid: Copy vs Quick Quote Form */}
@@ -54,15 +54,15 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Left Column: Heading and Value Proposition */}
           <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-5">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#dae2fd] tracking-tight leading-[1.12] text-balance">
-              Haz que tu marca se vea en las{' '}
+              Haz que tu negocio se destaque en{' '}
               <span className="text-[#89ceff] bg-gradient-to-r from-[#89ceff] to-[#0ea5e9] bg-clip-text text-transparent">
-                mejores pantallas
+                pantallas LED y puntos WiFi
               </span>{' '}
-              de la ciudad
+              de Paysandú
             </h1>
             
             <p className="text-lg sm:text-xl text-[#bec8d2] max-w-2xl leading-relaxed">
-              Publicidad exterior digital de alto impacto en Montevideo. Llega a miles de personas todos los días en los puntos más transitados de forma rápida, simple y accesible.
+              Publicidad exterior en pantallas LED y anuncios interactivos en portales cautivos WiFi. Llega a miles de clientes en la vía pública y directo a sus celulares cuando se conectan al WiFi en comercios y locales de Paysandú.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
@@ -87,19 +87,23 @@ export const Hero: React.FC<HeroProps> = ({
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#00a572] hover:bg-[#4edea3] text-[#002113] hover:text-black font-bold text-base shadow-[0_0_24px_rgba(16,185,129,0.3)] transition-all cursor-pointer"
               >
                 <Send className="w-5 h-5" />
-                <span>Cotizar mi Campaña en 1 Minuto</span>
+                <span>Cotizar en 1 Minuto</span>
               </a>
             </div>
 
             {/* Micro proof badges */}
-            <div className="flex items-center gap-6 pt-3 text-xs text-[#94a3b8] font-mono-code">
+            <div className="flex flex-wrap items-center gap-6 pt-3 text-xs text-[#94a3b8] font-mono-code">
+              <span className="flex items-center gap-1.5">
+                <Wifi className="w-4 h-4 text-[#4edea3]" />
+                Portal cautivo 100% visible
+              </span>
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#4edea3]" />
-                Reporte y auditoría de emisión
+                Métricas reales de conexión
               </span>
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-[#89ceff]" />
-                Sin costos de instalación
+                Diseño de anuncio bonificado
               </span>
             </div>
           </div>
@@ -116,7 +120,7 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             <p className="text-sm text-[#bec8d2] leading-snug">
-              Déjanos tu contacto y recibe la propuesta personalizada con tarifas de prelanzamiento.
+              Déjanos tu contacto y recibe una propuesta personalizada para tu comercio en Paysandú.
             </p>
 
             {submitted ? (
@@ -126,14 +130,14 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
                 <h4 className="text-white font-bold text-base">¡Propuesta Solicitada!</h4>
                 <p className="text-xs text-[#bec8d2]">
-                  Un asesor de PubliPantallas.uy te enviará la propuesta y disponibilidad al número ingresado.
+                  Un asesor de PubliPantallas.uy te enviará la propuesta personalizada para Paysandú al número ingresado.
                 </p>
                 <button
                   type="button"
                   onClick={() => setSubmitted(false)}
                   className="text-xs text-[#0ea5e9] hover:underline font-medium mt-1"
                 >
-                  Solicitar otra zona
+                  Solicitar otra cotización
                 </button>
               </div>
             ) : (
@@ -164,18 +168,17 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
 
                 <div>
-                  <label htmlFor="hero-zone" className="sr-only">Zona de Interés</label>
+                  <label htmlFor="hero-service" className="sr-only">Canal o Servicio</label>
                   <select
-                    id="hero-zone"
-                    value={zone}
-                    onChange={(e) => setZone(e.target.value)}
+                    id="hero-service"
+                    value={service}
+                    onChange={(e) => setService(e.target.value)}
                     className="w-full px-3.5 py-3 rounded-lg bg-[#222a3d] text-[#dae2fd] text-sm border border-transparent focus:border-[#0ea5e9] focus:outline-none transition-all"
                   >
-                    <option value="all">Quiero presencia en todo Montevideo</option>
-                    <option value="centro">Centro, Cordón &amp; 18 de Julio</option>
-                    <option value="pocitos">Pocitos, Punta Carretas &amp; Rambla</option>
-                    <option value="tres-cruces">Terminal Tres Cruces &amp; Accesos</option>
-                    <option value="wtc">World Trade Center &amp; Shopping</option>
+                    <option value="all">Asesoría para mi negocio en Paysandú</option>
+                    <option value="led">Pantallas LED Publicitarias</option>
+                    <option value="wifi">Publicidad en Puntos WiFi (Portal Cautivo)</option>
+                    <option value="combo">Combo Completo: Pantallas LED + WiFi</option>
                   </select>
                 </div>
 
@@ -200,38 +203,38 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-white block tracking-tight">
-                Zonas Clave
+                LED &amp; WiFi
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Puntos Estratégicos
+                Canales de Alto Impacto
               </span>
             </div>
           </div>
 
           <div className="flex items-center gap-3 p-3 rounded-lg bg-[#171f33] border border-[#222a3d]/60">
             <div className="w-11 h-11 rounded-lg bg-[#00a572]/10 text-[#4edea3] flex items-center justify-center shrink-0">
-              <Users className="w-6 h-6" />
+              <Wifi className="w-6 h-6" />
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-[#4edea3] block tracking-tight">
-                +1.8 Millones
+                100% Atención
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Impactos Potenciales
+                Portal Cautivo en Celulares
               </span>
             </div>
           </div>
 
           <div className="flex items-center gap-3 p-3 rounded-lg bg-[#171f33] border border-[#222a3d]/60">
             <div className="w-11 h-11 rounded-lg bg-[#7bd0ff]/10 text-[#7bd0ff] flex items-center justify-center shrink-0">
-              <Zap className="w-6 h-6" />
+              <Users className="w-6 h-6" />
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-[#7bd0ff] block tracking-tight">
-                Prelanzamiento
+                Paysandú
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
-                Tarifas Preferenciales
+                Audiencia Local Activa
               </span>
             </div>
           </div>
@@ -254,3 +257,4 @@ export const Hero: React.FC<HeroProps> = ({
     </section>
   );
 };
+

@@ -22,7 +22,7 @@ export const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
             Elige el Plan Ideal para tu Negocio
           </h2>
           <p className="text-base text-[#bec8d2]">
-            Sin contratos forzados ni sorpresas. Empieza con la inversión que mejor se adapte a tu objetivo.
+            Sin contratos forzados ni sorpresas. Empieza con el formato que mejor se adapte a tu objetivo en Paysandú.
           </p>
 
           {/* Currency Toggle */}
@@ -79,7 +79,7 @@ export const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
                 {isPopular && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#0ea5e9] text-[#001e2f] font-mono-code text-[11px] font-extrabold uppercase tracking-wider shadow-md whitespace-nowrap flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5" />
-                    <span>EL MÁS ELEGIDO // MÁXIMO RETORNO</span>
+                    <span>EL MÁS ELEGIDO // ALTA CONVERSIÓN</span>
                   </div>
                 )}
 
@@ -117,9 +117,9 @@ export const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
                         {plan.savingsNote}
                       </span>
                     )}
-                    {plan.id === 'starter' && currency === 'USD' && (
+                    {currency === 'USD' && plan.uyuPrice && (
                       <span className="text-[#4edea3] font-mono-code text-xs block mt-1">
-                        o $5.800 UYU / mes
+                        o ${plan.uyuPrice.toLocaleString('es-UY')} UYU / mes
                       </span>
                     )}
                   </div>

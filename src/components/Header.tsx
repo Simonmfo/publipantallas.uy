@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0ea5e9]"></span>
             </span>
             <span className="font-mono-code text-[11px] font-semibold text-[#89ceff] tracking-wider uppercase whitespace-nowrap">
-              RESERVAS ANTICIPADAS // MONTEVIDEO
+              PANTALLAS LED &amp; WIFI // PAYSANDÚ
             </span>
           </div>
         </div>
@@ -71,7 +71,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
         {/* Action Buttons Zone */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <a 
-            href="https://wa.me/59899000000?text=Hola%20PubliPantallas.uy,%20quiero%20cotizar%20publicidad%20exterior%20digital%20en%20Montevideo"
+            href="https://wa.me/59899000000?text=Hola%20PubliPantallas.uy,%20quiero%20cotizar%20publicidad%20en%20pantallas%20LED%20y%20puntos%20WiFi%20en%20Paysand%C3%BA"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#00a572] hover:bg-[#4edea3] text-[#002113] hover:text-black font-semibold text-xs sm:text-sm shadow-[0_0_16px_rgba(16,185,129,0.3)] transition-all cursor-pointer whitespace-nowrap"
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
           <div className="flex items-center justify-between pb-2 border-b border-[#222a3d]">
             <span className="text-xs font-mono-code text-[#89ceff] flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-[#0ea5e9] animate-pulse"></span>
-              Lanzamiento Montevideo
+              Lanzamiento en Paysandú
             </span>
           </div>
           <nav className="flex flex-col gap-2.5 text-sm text-[#dae2fd]">
@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
           </nav>
           <div className="pt-2 flex flex-col gap-2">
             <a 
-              href="https://wa.me/59899000000?text=Hola%20PubliPantallas.uy,%20quiero%20cotizar"
+              href="https://wa.me/59899000000?text=Hola%20PubliPantallas.uy,%20quiero%20cotizar%20en%20Paysand%C3%BA"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center py-2.5 rounded-lg bg-[#00a572] text-[#002113] font-bold text-sm flex items-center justify-center gap-2"
