@@ -77,8 +77,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
                 </a>
               </li>
               <li>
-                <a href="#software-publiled" className="hover:text-[#0ea5e9] transition-colors">
-                  App Publiled para Smart TV (5,90€)
+                <a href="#cotizar" className="hover:text-[#0ea5e9] transition-colors">
+                  Cobertura Agencias &amp; Medios
                 </a>
               </li>
               <li>

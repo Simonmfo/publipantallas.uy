@@ -242,7 +242,7 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
             <div>
               <span className="font-mono-code text-xl sm:text-2xl font-bold text-[#89ceff] block tracking-tight">
-                Desde $120
+                Desde $150
               </span>
               <span className="font-mono-code text-xs text-[#bec8d2]">
                 Planes accesibles/mes

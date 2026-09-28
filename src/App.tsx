@@ -7,7 +7,6 @@ import { Solutions } from './components/Solutions';
 import { ScreensCatalog } from './components/ScreensCatalog';
 import { Pricing } from './components/Pricing';
 import { HowItWorks } from './components/HowItWorks';
-import { PubliledSoftware } from './components/PubliledSoftware';
 import { QuoteSection } from './components/QuoteSection';
 import { Footer } from './components/Footer';
 import { ScreenSimulatorModal } from './components/ScreenSimulatorModal';
@@ -62,7 +61,7 @@ export default function App() {
   };
 
   // When user selects a solution
-  const handleSelectSolution = (type: 'pyme' | 'marcas' | 'software') => {
+  const handleSelectSolution = (type: 'pyme' | 'marcas' | 'agencias') => {
     if (type === 'pyme') {
       const el = document.getElementById('planes');
       if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -73,8 +72,11 @@ export default function App() {
       });
       scrollToQuote();
     } else {
-      const el = document.getElementById('software-publiled');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      setQuotePrefill({
+        screenInterest: 'Red Completa 48 Pantallas',
+        notes: 'Consulta para Agencias / Cobertura Total en Montevideo.',
+      });
+      scrollToQuote();
     }
   };
 
@@ -121,9 +123,6 @@ export default function App() {
 
         {/* 3 Step Process */}
         <HowItWorks />
-
-        {/* Publiled Retail TV Software */}
-        <PubliledSoftware />
 
         {/* Quote & Booking Contact Form */}
         <QuoteSection
