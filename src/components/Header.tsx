@@ -15,18 +15,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
         {/* Brand Zone */}
         <div className="flex items-center gap-3 shrink-0">
           <a href="#" className="flex items-center gap-2.5 group">
-            <div className="relative flex items-center justify-center h-10 w-10 rounded-lg bg-[#131b2e] border border-[#222a3d] p-1.5 shadow-sm overflow-hidden">
-              {logoLoaded ? (
-                <img 
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1X5PE-1e-pzGsQj0-TyFUJH6mhtOCf7_M42zQQlfLHdCQ6UGA9P236g9xoWh1U6DOiR0qLc-J5N9N52-QgVA4K3hLSfANDJlsUfBs_kb0ZjkFUavP-fNbTezS9VkIANWOt-Fm-NwvVSLhEYkbFyBZNf2eHlQlnD_q0Bri6hnnaAIcRm-OhxLczoXPqDeXDDrEZ7lWWLE1wVMpNiQmbFtDK1Izk3C5e81IHkOpd7K4HlvI-9xYGG1cMXMLY" 
-                  alt="PubliPantallas.uy" 
-                  className="h-full w-auto object-contain"
-                  referrerPolicy="no-referrer"
-                  onError={() => setLogoLoaded(false)}
-                />
-              ) : (
-                <MonitorPlay className="w-5 h-5 text-[#0ea5e9]" />
-              )}
+            <div className="relative flex items-center justify-center h-10 w-10 rounded-lg bg-[#131b2e] border border-[#222a3d] p-0.5 shadow-sm overflow-hidden">
+              <img 
+                src="/icon.jpg" 
+                alt="PubliPantallas.uy Logo" 
+                className="h-full w-full object-cover rounded-md"
+              />
             </div>
             <span className="text-xl font-bold tracking-tight text-white group-hover:text-[#89ceff] transition-colors whitespace-nowrap">
               PubliPantallas<span className="text-[#0ea5e9]">.uy</span>

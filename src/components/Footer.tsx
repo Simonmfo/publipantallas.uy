@@ -12,7 +12,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2.5">
+              <div className="h-9 w-9 rounded-lg bg-[#131b2e] border border-[#222a3d] p-0.5 overflow-hidden shrink-0">
+                <img src="/icon.jpg" alt="PubliPantallas.uy Logo" className="h-full w-full object-cover rounded" />
+              </div>
               <span className="text-2xl font-extrabold text-white tracking-tight">
                 PubliPantallas<span className="text-[#0ea5e9]">.uy</span>
               </span>
