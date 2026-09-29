@@ -129,8 +129,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#222a3d] flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#88929b]">
-          <div>
-            © 2025 PubliPantallas.uy. Publicidad exterior digital en pantallas LED en Paysandú, Uruguay. Todos los derechos reservados.
+          <div className="text-center md:text-left space-y-1">
+            <p>
+              © 2025 PubliPantallas.uy. Publicidad exterior digital en pantallas LED en Paysandú, Uruguay. Todos los derechos reservados.
+            </p>
+            <p>
+              Desarrollado por{' '}
+              <a 
+                href="https://urudev-uy.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#4edea3] hover:underline font-semibold transition-colors"
+              >
+                urudev.uy
+              </a>
+            </p>
           </div>
           <div className="flex items-center gap-6">
             <span className="text-[#4edea3]">Lanza tu campaña en 24h</span>
