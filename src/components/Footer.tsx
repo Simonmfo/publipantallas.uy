@@ -12,13 +12,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="h-9 w-9 rounded-lg bg-[#131b2e] border border-[#222a3d] p-0.5 overflow-hidden shrink-0">
-                <img src="/icon.jpg" alt="PubliPantallas.uy Logo" className="h-full w-full object-cover rounded" />
+            <div className="flex items-center gap-4">
+              <div className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl bg-[#131b2e] border-2 border-[#222a3d] p-1.5 overflow-hidden shrink-0 shadow-[0_0_30px_rgba(14,165,233,0.25)] hover:border-[#0ea5e9]/70 transition-all">
+                <img src="/icon.jpg" alt="PubliPantallas.uy Logo" className="h-full w-full object-cover rounded-xl" />
               </div>
-              <span className="text-2xl font-extrabold text-white tracking-tight">
-                PubliPantallas<span className="text-[#0ea5e9]">.uy</span>
-              </span>
+              <div className="flex flex-col justify-center">
+                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
+                  PubliPantallas<span className="text-[#0ea5e9]">.uy</span>
+                </span>
+                <span className="text-[11px] font-mono-code text-[#4edea3] font-bold tracking-wider uppercase mt-1">
+                  Paysandú · Uruguay
+                </span>
+              </div>
             </div>
             <p className="text-sm text-[#bec8d2] leading-relaxed">
               La plataforma de publicidad exterior digital en pantallas LED de Paysandú. Ayudamos a comercios y marcas a aumentar sus ventas y presencia todos los días.
