@@ -128,24 +128,50 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#222a3d] flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#88929b]">
-          <div className="text-center md:text-left space-y-1">
-            <p>
-              © 2025 PubliPantallas.uy. Publicidad exterior digital en pantallas LED en Paysandú, Uruguay. Todos los derechos reservados.
-            </p>
-            <p>
-              Desarrollado por{' '}
-              <a 
-                href="https://urudev-uy.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-[#4edea3] hover:underline font-semibold transition-colors"
-              >
-                urudev.uy
-              </a>
-            </p>
+        <div className="pt-8 border-t border-[#222a3d] flex flex-col items-center justify-center text-center gap-5 font-mono-code text-xs text-[#88929b]">
+          {/* Desarrollado por urudev.uy con Logo */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+            <span className="text-xs text-[#88929b] tracking-wider uppercase">
+              Desarrollado por
+            </span>
+            <a 
+              href="https://urudev-uy.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-[#090d18] border border-[#005ff9]/40 hover:border-[#005ff9] shadow-[0_0_15px_rgba(0,95,249,0.2)] hover:shadow-[0_0_22px_rgba(0,95,249,0.35)] transition-all duration-300 group hover:scale-[1.02]"
+            >
+              {/* Logo urudev.uy */}
+              <div className="relative w-7 h-7 rounded-lg bg-gradient-to-b from-[#11192e] to-[#070a14] border border-[#005ff9]/50 flex items-center justify-center shrink-0 overflow-hidden shadow-sm group-hover:border-[#005ff9] transition-all">
+                <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none" />
+                <div className="absolute -top-3 inset-x-0 h-4 bg-[#005ff9]/35 blur-xs rounded-full pointer-events-none" />
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
+                  <defs>
+                    <linearGradient id="footerChevGrad" x1="10" y1="13" x2="20" y2="27" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stopColor="#38bdf8" />
+                      <stop offset="100%" stopColor="#005ff9" />
+                    </linearGradient>
+                    <linearGradient id="footerCurGrad" x1="22" y1="27" x2="30" y2="27" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stopColor="#00e599" />
+                      <stop offset="100%" stopColor="#3fd5ae" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M11 13L19.5 20L11 27" stroke="url(#footerChevGrad)" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M22.5 27H30" stroke="url(#footerCurGrad)" strokeWidth="3.6" strokeLinecap="round" />
+                </svg>
+              </div>
+
+              {/* Nombre de marca urudev.uy más grande */}
+              <span className="font-sans font-bold text-base sm:text-lg text-white group-hover:text-white transition-colors tracking-tight">
+                urudev<span className="text-[#38bdf8]">.uy</span>
+              </span>
+            </a>
           </div>
-          <div className="flex items-center gap-6">
+
+          <div>
+            © 2025 PubliPantallas.uy. Publicidad exterior digital en pantallas LED en Paysandú, Uruguay. Todos los derechos reservados.
+          </div>
+
+          <div className="flex items-center justify-center gap-6 text-[11px]">
             <span className="text-[#4edea3]">Lanza tu campaña en 24h</span>
             <span className="text-[#0ea5e9]">Soporte local en Paysandú</span>
           </div>
