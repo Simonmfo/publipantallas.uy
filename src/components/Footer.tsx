@@ -9,10 +9,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
   return (
     <footer className="w-full bg-[#060e20] text-[#bec8d2] pt-16 pb-12 border-t border-[#222a3d] shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
           {/* Brand Info */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-4">
+          <div className="lg:col-span-5 space-y-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <div className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl bg-[#131b2e] border-2 border-[#222a3d] p-1.5 overflow-hidden shrink-0 shadow-[0_0_30px_rgba(14,165,233,0.25)] hover:border-[#0ea5e9]/70 transition-all">
                 <img src="/icon.jpg" alt="PubliPantallas.uy Logo" className="h-full w-full object-cover rounded-xl" />
               </div>
@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
                 </span>
               </div>
             </div>
-            <p className="text-sm text-[#bec8d2] leading-relaxed">
+            <p className="text-sm text-[#bec8d2] leading-relaxed max-w-md">
               La plataforma de publicidad exterior digital en pantallas LED de Paysandú. Ayudamos a comercios y marcas a aumentar sus ventas y presencia todos los días.
             </p>
             <div className="flex items-center gap-2 text-[#4edea3] font-mono-code text-xs font-bold pt-1">
@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           </div>
 
           {/* Services & Channels */}
-          <div className="space-y-3">
+          <div className="lg:col-span-2 space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
               Servicios
             </span>
@@ -69,7 +69,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           </div>
 
           {/* Solutions */}
-          <div className="space-y-3">
+          <div className="lg:col-span-2 space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
               Ventajas
             </span>
@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           </div>
 
           {/* Contact */}
-          <div className="space-y-3">
+          <div className="lg:col-span-3 space-y-3">
             <span className="font-mono-code text-xs font-bold text-white uppercase tracking-wider block">
               Contacto Comercial
             </span>
